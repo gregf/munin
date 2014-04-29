@@ -19,6 +19,7 @@
 
 service 'apache2' do
   action :stop
+  ignore_failure true
 end
 
 include_recipe 'nginx::default'
